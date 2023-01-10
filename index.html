@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./assets/css.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./scores.html" class="scores">
+        <!-- <button class="scores">View high scores</button>-->High Scores</a
+      >
+      <h2 class="timer-count">100</h2>
+    </header>
+
+    <section class="container start-screen">
+      <h2>Coding Quiz Challenge</h2>
+      <p>
+        Try to answer the time code-related questions within the time limit.Keep
+        in mind that incorrect answers will penalize your score/time by ten
+        seconds!
+      </p>
+      <button id="start">Start</button>
+    </section>
+
+    <section class="questions-screen hide container-2">
+      <h2 id="displayQuestion"></h2>
+
+      <div id="choices">
+        <button class="choices" data-button="1" type="button">Answer 1</button>
+        <button class="choices" data-button="2" type="button">Answer 2</button>
+        <button class="choices" data-button="3" type="button">Answer 3</button>
+        <button class="choices" data-button="4" type="button">Answer 4</button>
+      </div>
+    </section>
+
+    <section class="score-screen hide container-3">
+      <h2>Enter Your Name</h2>
+      <input type="text" placeholder="Your Name..." class="text-box" />
+      <button id="submit-button">Submit</button>
+      <a href="./index.html" class="submit-button">Back</a>
+    </section>
+    <script src="./assets/js.js"></script>
+  </body>
+</html>
